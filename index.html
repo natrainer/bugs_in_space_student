@@ -12,24 +12,18 @@ I have a good picture of what I want in my images/website-mockup folder for you 
     <link rel="stylesheet" type="text/css" media="screen" href="style.css" />
     <title>Debugging In Space</title>
     <header>
-      <div id="title-and-images">
+      <div class="title-and-images">
         <!-- Where are my bug images?  Help me fix this! -->
-        <img src="fly.gif">
-        <h1>Debugging in Space</h1>
-        <img src="beetle.gif">
-      </div>
+            <img src="images/fly.gif">
+            <h1>Debugging in Space</h1>
+            <img src="images/beetle.gif">
       <!-- On the a tags in the ul li secton below, I would like them to go to the right section when clicked. -->
-      <nav>
+
+       <div class="nav">
         <ul>
-          <li>
-            <a href="history">History of NASA</a>
-          </li>
-          <li>
-            <a href="astronauts">Famous Astronauts</a>
-          </li>
-          <li>
-            <a href="facts">Fun Facts</a>
-          </li>
+          <li><a href="#history">History of NASA</a></li>
+          <li><a href="#astronauts">Famous Astronauts</a></li>
+          <li><a href="#facts">Fun Facts</a></li>
         </ul>
       </nav>
     </header>
@@ -53,11 +47,12 @@ I have a good picture of what I want in my images/website-mockup folder for you 
       </p>
       <a href="https://history.nasa.gov/factsheet.htm">Source: NASA FactSheet</a>
     </section>
-    <!-- Hmm, looks like my font color is red for some reason. -->
+
+
     <section id="astronauts">
       <h3>Famous Astronauts</h3>
       <div class="astronaut-card-container">
-        <div class="astronaut-card" style="color: red">
+        <div class="astronaut-card" style="color:black">
           <img class="astronaut-img" src="images/sally_ride.jpg">
           <div class="astronaut-card-information">
             <h4>Sally Ride</h4>
@@ -69,7 +64,7 @@ I have a good picture of what I want in my images/website-mockup folder for you 
             </p>
           </div>
         </div>
-        <div class="astronaut-card" style="color: red">
+        <div class="astronaut-card" style="color: black">
           <img class="astronaut-img" src="images/mae_jemison.jpg">
           <div class="astronaut-card-information">
             <h4>Mae Jemison</h4>
@@ -83,8 +78,8 @@ I have a good picture of what I want in my images/website-mockup folder for you 
             </p>
           </div>
         </div>
-        <div class="astronaut-card" style="color: red">
-          <img class="astronaut-img" src="judith_resnik.jpg">
+        <div class="astronaut-card" style="color: black">
+          <img class="astronaut-img" src="images/judith_resnik.jpg">
           <div class="astronaut-card-information">
             <h4>Judith Resnik</h4>
             <p>Judith Resnik was an American engineer and a NASA astronaut who died when the Space Shuttle Challenger was destroyed
@@ -104,16 +99,16 @@ I have a good picture of what I want in my images/website-mockup folder for you 
           <p>Fast facts about NASA and space!
             <a href="https://list25.com/25-fun-facts-about-nasa-you-might-not-know/">Source</a>
           </p>
-        </div
-        <div class="fact">
+        </div>
+        <div class="fact-panel">
           <p>In 2006 NASA admitted to having accidentally recorded over the original tapes of the moon landing. Fortunately NASA wasn't
             the only group recording. Copies found at CBS and Johnson Space Center are currently being restored.
           </p>
         </div>
-        <div class="fact">
+        <div class="fact-panel">
           <p>In the 1970s, NASA's Landsat program literally changed the way we look at our planet Earth. The first three Landsat satellites, launched in 1972, 1975, and 1978, transmitted back to Earth complex data streams that could be converted into colored pictures. Landsat data has been used in a variety of practical commercial applications such as crop management and fault line detection, and to track many kinds of weather such as droughts, forest fires, and ice floes. NASA has been involved in a variety of other Earth science efforts such as the Earth Observation System of spacecraft and data processing that have yielded important scientific results in such areas as tropical deforestation, global warming, and climate change.</p>
         </div>
-        <div class="fact">
+        <div class="fact-panel">
           <p>Over the years, NASA has continued to look for life beyond our planet. In 1975, NASA launched the two Viking spacecraft to look for basic signs of life on Mars; the spacecraft arrived on Mars in 1976 but did not find any indications of past or present biological activity there. In 1996 a probe from the Galileo spacecraft that was examining Jupiter and its moon, Europa, revealed that Europa may contain ice or even liquid water, thought to be a key component in any life-sustaining environment.</p>
         </div>
       </div>

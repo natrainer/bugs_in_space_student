@@ -44,8 +44,26 @@ p {
   font-size: 16px;
 }
 
-nav {
+header {
+  background-image: url("https://images.unsplash.com/photo-1508612227635-e7cbb9bdf54d?ixlib=rb-0.3.5&ixid=eyJhcHBfaWQiOjEyMDd9&s=77a3b002e25d8ae4e281a8515017aaf4&auto=format&fit=crop&w=2520&q=80");
+  background-size: cover;
+  height: 500px;
+  width: 100%;
+  display: block;
+}
 
+.title-and-images {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  padding: 3em;
+}
+
+.nav {
+    display: flex;
+    float: none;
+    position: absolute;
+    padding: 280px;
 }
 
 ul {
@@ -58,40 +76,40 @@ li {
   background-color: red;
   list-style-type: none;
   margin-left: 20px;
+  text-align: center;
+
 }
 
 li a {
   color: white;
 }
 
-header {
-  background-image: url("https://images.unsplash.com/photo-1508612227635-e7cbb9bdf54d?ixlib=rb-0.3.5&ixid=eyJhcHBfaWQiOjEyMDd9&s=77a3b002e25d8ae4e281a8515017aaf4&auto=format&fit=crop&w=2520&q=80");
-  background-size: cover;
-  height: 300px;
-  width: 100%;
-  display: block;
+#history {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
 }
 
-.title-and-images {
+
+.astronaut-card-container {
   display: flex;
   flex-direction: row;
   justify-content: center;
-  padding: 1em;
-}
-
-.astronaut-card-container {
 
 }
 
 .astronaut-card {
   flex-direction: row;
   flex-wrap: wrap;
-  margin: 1em 0;
+  margin: 1em;
   background-color: #f4f2f2;
   color: #1c1c1c;
 }
 
 .astronaut-card-information {
+  position: static;
+  width: 330px;
+  padding: 25px;
 
 }
 
@@ -100,7 +118,7 @@ header {
 }
 
 .astronaut-img {
-
+ width: 100%;
 }
 
 #facts {
@@ -109,9 +127,12 @@ header {
   justify-content: center;
 }
 
-.fact {
+.fact-panel {
+  padding: 30px;
+  margin: 10px;
   background-color: #f4f2f2;
   color: #1c1c1c;
+  justify-content: center;
 }
 
 footer {
